@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jadwal Perkuliahan Semester Genap</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    .font-robotoslab {
+      font-family: 'Roboto Slab', serif;
+      letter-spacing: 0.3em;
+    }
+    /* Fade in animation */
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fadeInUp {
+      animation: fadeInUp 0.7s ease forwards;
+    }
+    /* Image zoom on hover */
+    .zoom-img {
+      transition: transform 0.4s ease;
+      border-radius: 0.75rem;
+      box-shadow: 0 8px 20px rgba(27, 46, 115, 0.3);
+      cursor: zoom-in;
+    }
+    .zoom-img:hover,
+    .zoom-img:focus {
+      transform: scale(1.05);
+      box-shadow: 0 12px 30px rgba(27, 46, 115, 0.5);
+      outline: none;
+    }
+  </style>
+</head>
+<body class="bg-white">
+   <header class="bg-[#1B2A6B] flex items-center justify-between px-6 py-4">
+    <div class="flex items-center space-x-3">
+      <img src="foto pengumuman/1000209760-removebg-preview.png" alt="Logo" class="h-10 w-auto">
+      <div class="hidden sm:block text-white font-extrabold text-xs leading-tight">
+        <div>PENDIDIKAN</div>
+        <div>TEKNOLOGI</div>
+        <div>INFORMASI</div>
+      </div>
+    </div>
+    <nav class="flex items-center space-x-8 text-white text-sm">
+      <a href="halaman.html" class="hover:underline">Beranda</a>
+      <a href="kontak.html" class="hover:underline">Profil</a>
+      <a href="profil.html" class="hover:underline">Kontak</a>
+    </nav>
+  </header>
+  <div class="max-w-5xl mx-auto px-6 py-16">
+    <h1
+      class="text-[#1B2E73] font-robotoslab font-extrabold text-4xl mb-12 select-none text-center"
+      style="letter-spacing: 0.3em"
+    >
+      J A D W A L &nbsp; P E R K U L I A H A N
+    </h1>
+    <div class="flex flex-col md:flex-row items-center gap-10 animate-fadeInUp">
+      <img
+        src="foto pengumuman/WhatsApp Image 2025-07-09 at 15.05.03.jpeg"
+        alt="Jadwal Perkuliahan Semester Genap Tahun 2025, calendar and schedule concept with dates and notes"
+        class="zoom-img w-full md:w-1/2 object-cover"
+        tabindex="0"
+      />
+      <div class="md:w-1/2 text-[#1B2E73]">
+        <p class="mb-6 text-lg leading-relaxed font-medium">
+          Berikut adalah jadwal perkuliahan untuk semester genap tahun 2025. Jadwal ini mencakup seluruh mata kuliah, tanggal mulai dan berakhir perkuliahan, serta hari libur akademik yang berlaku. Pastikan untuk mengikuti jadwal ini agar proses belajar mengajar berjalan lancar dan sesuai dengan rencana akademik.
+        </p>
+        <p class="mb-6 text-base leading-relaxed">
+          Jadwal ini juga memuat informasi penting seperti ujian tengah semester, ujian akhir semester, dan masa registrasi ulang. Kami sarankan mahasiswa untuk selalu memantau pengumuman resmi dari fakultas untuk update terbaru terkait jadwal perkuliahan.
+        </p>
+        <p class="mb-6 text-base leading-relaxed">
+          Jika ada pertanyaan atau membutuhkan bantuan terkait jadwal, silakan menghubungi bagian akademik atau dosen pembimbing masing-masing.
+        </p>
+        <a href="javascript:history.back()" class="inline-block bg-[#4A90E2] text-white rounded-md px-6 py-3 font-medium hover:bg-[#3a74c2] transition-colors duration-300">
+          Kembali ke Pengumuman
+        </a>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-[#1B2E73] py-6 mt-20">
+    <p class="text-center text-white text-base font-normal max-w-7xl mx-auto px-6">
+      © 2025 Pendidikan Teknologi Informasi. All rights reserved.
+    </p>
+  </footer>
+</body>
+</html>

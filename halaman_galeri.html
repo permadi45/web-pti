@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Halaman Galeri</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
+
+    .card {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      z-index: 10;
+    }
+
+    .popup {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(27, 47, 110, 0.9);
+      color: white;
+      padding: 0.75rem 1rem;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      font-size: 1rem;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      pointer-events: none;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    .card:hover .popup {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  </style>
+</head>
+<body class="bg-white font-sans">
+
+  <!-- HEADER TAMBAHAN -->
+  <header class="bg-[#1B2A6B] flex items-center justify-between px-6 py-4">
+    <div class="flex items-center space-x-3">
+      <img src="logo  pti/1000209760-removebg-preview.png" alt="Logo" class="h-10 w-auto">
+      <div class="hidden sm:block text-white font-extrabold text-xs leading-tight">
+        <div>PENDIDIKAN</div>
+        <div>TEKNOLOGI</div>
+        <div>INFORMASI</div>
+      </div>
+    </div>
+    <nav class="flex items-center space-x-8 text-white text-sm">
+      <a href="halaman.html" class="hover:underline">Beranda</a>
+      <a href="kontak.html" class="hover:underline">Profil</a>
+      <a href="profil.html" class="hover:underline">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- GALERI -->
+  <section class="max-w-7xl mx-auto px-4 py-12">
+    <h2 class="text-[#1b2f6e] text-4xl font-extrabold text-center mb-10" style="font-family: 'Roboto Slab', serif; letter-spacing: 0.3em">
+      GALERI
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <!-- Card 1 -->
+      <div class="card rounded-lg shadow-md bg-white">
+        <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.12.26 (2).jpeg" alt="Kegiatan Praktikum" class="w-full h-48 object-cover rounded-t-lg"/>
+        <div class="popup">Kegiatan Praktikum</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card rounded-lg shadow-md bg-white">
+        <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.12.26.jpeg" alt="Workshop AI" class="w-full h-48 object-cover rounded-t-lg"/>
+        <div class="popup">Workshop AI</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card rounded-lg shadow-md bg-white">
+        <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.17.15 (1).jpeg" alt="Kuliah Umum" class="w-full h-48 object-cover rounded-t-lg"/>
+        <div class="popup">Kuliah Umum</div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card rounded-lg shadow-md bg-white">
+        <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.17.15.jpeg" alt="Diskusi Kelompok" class="w-full h-48 object-cover rounded-t-lg"/>
+        <div class="popup">Diskusi Kelompok</div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card rounded-lg shadow-md bg-white">
+        <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.18.38.jpeg" alt="Presentasi Mahasiswa" class="w-full h-48 object-cover rounded-t-lg"/>
+        <div class="popup">Presentasi Mahasiswa</div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card rounded-lg shadow-md bg-white">
+        <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.21.01.jpeg" alt="Pelatihan Komputer" class="w-full h-48 object-cover rounded-t-lg"/>
+        <div class="popup">Pelatihan Komputer</div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card rounded-lg shadow-md bg-white">
+        <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.19.45.jpeg" alt="Seminar IT" class="w-full h-48 object-cover rounded-t-lg"/>
+        <div class="popup">Seminar IT</div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card rounded-lg shadow-md bg-white">
+        <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.21.02.jpeg" alt="Tugas Kelompok" class="w-full h-48 object-cover rounded-t-lg"/>
+        <div class="popup">Tugas Kelompok</div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="card rounded-lg shadow-md bg-white">
+        <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.21.04.jpeg" alt="Lomba Teknologi" class="w-full h-48 object-cover rounded-t-lg"/>
+        <div class="popup">Lomba Teknologi</div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="card rounded-lg shadow-md bg-white">
+        <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.21.06.jpeg" alt="Foto Bersama" class="w-full h-48 object-cover rounded-t-lg"/>
+        <div class="popup">Foto Bersama</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

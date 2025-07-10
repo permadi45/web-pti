@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>Profil PTI - Struktur Kelas dan Dosen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+    }
+    .font-robotoslab {
+      font-family: "Roboto Slab", serif;
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(27, 42, 107, 0.5);
+      z-index: 10;
+    }
+  </style>
+</head>
+<body class="bg-white min-h-screen">
+
+  <!-- Header disamakan -->
+  <header class="bg-[#1B2A6B] flex items-center justify-between px-6 py-4">
+    <div class="flex items-center space-x-3">
+      <img src="logo  pti/1000209760-removebg-preview.png" alt="Logo" class="h-10 w-auto">
+      <div class="hidden sm:block text-white font-extrabold text-xs leading-tight">
+        <div>PENDIDIKAN</div>
+        <div>TEKNOLOGI</div>
+        <div>INFORMASI</div>
+      </div>
+    </div>
+    <nav class="flex items-center space-x-8 text-white text-sm">
+      <a href="halaman.html" class="hover:underline">Beranda</a>
+      <a href="profil.html" class="hover:underline">Profil</a>
+      <a href="kontak.html" class="hover:underline">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main class="max-w-7xl mx-auto px-6 sm:px-10 py-12 md:py-20">
+    <h1 class="font-robotoslab text-[#1B2A6B] text-4xl md:text-5xl font-extrabold leading-tight mb-12 uppercase text-center">
+      Profil PTI - Struktur Kelas dan Dosen
+    </h1>
+
+    <!-- Struktur Kelas -->
+    <section class="mb-16">
+      <h2 class="font-robotoslab text-[#1B2A6B] text-3xl font-bold mb-8 border-b-4 border-[#F7931E] inline-block pb-2">
+        Struktur Kelas
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+        <!-- Card Mahasiswa -->
+        <div class="card-hover bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+          <img class="w-36 h-36 rounded-full object-cover mb-4" src="https://storage.googleapis.com/a1aa/image/b6191d59-96e8-4490-1bd7-73e4ea276f21.jpg" alt="Ahmad Fauzi" />
+          <h3 class="font-robotoslab font-bold text-lg text-[#1B2A6B] mb-1">Ahmad Fauzi</h3>
+          <p class="text-gray-600 text-sm mb-1">NIM: 123456789</p>
+          <p class="text-gray-500 text-sm mb-2">Kelas: PTI 6A</p>
+          <p class="text-[#F7931E] font-semibold text-sm">Ketua Kelas</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+          <img class="w-36 h-36 rounded-full object-cover mb-4" src="https://storage.googleapis.com/a1aa/image/76f0748f-781f-4a96-f5d5-e334aa680afe.jpg" alt="Siti Nurhaliza" />
+          <h3 class="font-robotoslab font-bold text-lg text-[#1B2A6B] mb-1">Siti Nurhaliza</h3>
+          <p class="text-gray-600 text-sm mb-1">NIM: 987654321</p>
+          <p class="text-gray-500 text-sm mb-2">Kelas: PTI 6A</p>
+          <p class="text-[#F7931E] font-semibold text-sm">Wakil Ketua</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+          <img class="w-36 h-36 rounded-full object-cover mb-4" src="https://storage.googleapis.com/a1aa/image/c24e5341-1de4-4e80-29f6-ae25aab880f1.jpg" alt="Budi Santoso" />
+          <h3 class="font-robotoslab font-bold text-lg text-[#1B2A6B] mb-1">Budi Santoso</h3>
+          <p class="text-gray-600 text-sm mb-1">NIM: 112233445</p>
+          <p class="text-gray-500 text-sm mb-2">Kelas: PTI 6B</p>
+          <p class="text-[#F7931E] font-semibold text-sm">Sekretaris</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+          <img class="w-36 h-36 rounded-full object-cover mb-4" src="https://storage.googleapis.com/a1aa/image/87c4a45d-db5e-45d4-6047-b0065f5442f3.jpg" alt="Dewi Lestari" />
+          <h3 class="font-robotoslab font-bold text-lg text-[#1B2A6B] mb-1">Dewi Lestari</h3>
+          <p class="text-gray-600 text-sm mb-1">NIM: 556677889</p>
+          <p class="text-gray-500 text-sm mb-2">Kelas: PTI 6B</p>
+          <p class="text-[#F7931E] font-semibold text-sm">Bendahara</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Dosen Prodi -->
+    <section>
+      <h2 class="font-robotoslab text-[#1B2A6B] text-3xl font-bold mb-8 border-b-4 border-[#F7931E] inline-block pb-2">
+        Dosen Prodi PTI
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+        <!-- Card Dosen -->
+        <div class="card-hover bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+          <img class="w-36 h-36 rounded-full object-cover mb-4" src="foto dosen/WhatsApp Image 2025-06-20 at 15.04.19 (1).jpeg" alt="Bu niki" />
+          <h3 class="font-robotoslab font-bold text-lg text-[#1B2A6B] mb-1">NICKY DWI KURNIA, S.Pd., M.Pd.</h3>
+          <p class="text-gray-600 text-sm mb-1">NIDN: 0717059401</p>
+          <p class="text-gray-500 text-sm">Mata Kuliah Algoritma</p>
+          <p class="text-gray-500 text-sm">Email: andi.wijaya@pti.ac.id</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+          <img class="w-36 h-36 rounded-full object-cover mb-4" src="foto dosen/WhatsApp Image 2025-06-20 at 15.04.19 (2).jpeg" alt="bu febi" />
+          <h3 class="font-robotoslab font-bold text-lg text-[#1B2A6B] mb-1">FEBIWARTA NUR ANI, S.Pd., M.Pd.</h3>
+          <p class="text-gray-600 text-sm mb-1">NIDN: 0711029305</p>
+          <p class="text-gray-500 text-sm">Mata Kuliah Pemrograman</p>
+          <p class="text-gray-500 text-sm">Email: sari.melati@pti.ac.id</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+          <img class="w-36 h-36 rounded-full object-cover mb-4" src="foto dosen/WhatsApp Image 2025-06-20 at 15.04.19.jpeg" alt="bu laili" />
+          <h3 class="font-robotoslab font-bold text-lg text-[#1B2A6B] mb-1">Dr. NURUL LAILI SA'ADAH, S.Pd., M.Pd..</h3>
+          <p class="text-gray-600 text-sm mb-1">NIDN: 0725089701</p>
+          <p class="text-gray-500 text-sm">Mata Kuliah Jaringan Komputer</p>
+          <p class="text-gray-500 text-sm">Email: budi.hartono@pti.ac.id</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+          <img class="w-36 h-36 rounded-full object-cover mb-4" src="foto dosen/WhatsApp Image 2025-06-20 at 15.04.20 (1).jpeg" alt="pak sabar" />
+          <h3 class="font-robotoslab font-bold text-lg text-[#1B2A6B] mb-1">SABAR, S.Pd., M.Pd.</h3>
+          <p class="text-gray-600 text-sm mb-1">NIDN: 0722039007</p>
+          <p class="text-gray-500 text-sm">Mata Kuliah Basis Data</p>
+          <p class="text-gray-500 text-sm">Email: lina.marlina@pti.ac.id</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+          <img class="w-36 h-36 rounded-full object-cover mb-4" src="foto dosen/WhatsApp Image 2025-06-20 at 15.04.20.jpeg" alt="pak trio" />
+          <h3 class="font-robotoslab font-bold text-lg text-[#1B2A6B] mb-1">MUHAMMAD TRIO MAULANA PUTRA, M.Pd.,</h3>
+          <p class="text-gray-600 text-sm mb-1">NIDN: 0704109503</p>
+          <p class="text-gray-500 text-sm">Mata Kuliah Basis Data</p>
+          <p class="text-gray-500 text-sm">Email: lina.marlina@pti.ac.id</p>
+        </div>
+
+        <div class="card-hover bg-white rounded-lg shadow-md p-6 flex flex-col items-center text-center">
+          <img class="w-36 h-36 rounded-full object-cover mb-4" src="foto dosen/WhatsApp Image 2025-06-20 at 15.04.20.jpeg" alt="bu zahro" />
+          <h3 class="font-robotoslab font-bold text-lg text-[#1B2A6B] mb-1">Dr. FATIMATUZ ZAHRO, S.Pd.i., M.Pd.</h3>
+          <p class="text-gray-600 text-sm mb-1">NIDN: 0722028909</p>
+          <p class="text-gray-500 text-sm">Mata Kuliah Basis Data</p>
+          <p class="text-gray-500 text-sm">Email: lina.marlina@pti.ac.id</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+ <!-- Footer -->
+  <footer class="bg-[#1A2A6C] text-white text-center py-4">
+    &copy; 2025 Pendidikan Teknologi Informasi. All rights reserved.
+  </footer>
+
+</body>
+</html>
