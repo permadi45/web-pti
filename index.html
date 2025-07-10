@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>PTI Class with Animated Cards</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .font-alfa {
+      font-family: 'Alfa Slab One', cursive;
+    }
+    .swipe-card {
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    .swiped-right {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+      display: none;
+    }
+    .scrollbar-hide {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-white">
+
+  <!-- Header -->
+  <header class="bg-[#1B2A6B] flex items-center justify-between px-6 py-4">
+    <div class="flex items-center space-x-3">
+      <img src="logo  pti/1000209760-removebg-preview.png" alt="Logo" class="h-10 w-auto">
+      <div class="hidden sm:block text-white font-extrabold text-xs leading-tight">
+        <div>PENDIDIKAN</div>
+        <div>TEKNOLOGI</div>
+        <div>INFORMASI</div>
+      </div>
+    </div>
+    <nav class="flex items-center space-x-8 text-white text-sm">
+      <a href="halaman.html" class="hover:underline">Beranda</a>
+      <a href="kontak.html" class="hover:underline">Profil</a>
+      <a href="profil.html" class="hover:underline">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Main Hero Section -->
+  <main class="max-w-7xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-center">
+    <section class="md:w-1/2 md:pr-12">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-[#1B2A6B] uppercase">Class Pendidikan<br>Teknologi Informasi</h1>
+      <p class="text-sm md:text-base text-gray-500 mt-2">Semester 6</p>
+      <p class="text-gray-600 mt-4">Program studi Pendidikan Teknologi Informasi mempersiapkan inovator pendidikan yang kompeten dan terampil dalam memanfaatkan teknologi informasi.</p>
+    </section>
+    <section class="md:w-1/2 mt-10 md:mt-0 relative flex justify-center">
+      <div class="absolute rounded-full bg-[#F7941D] w-80 h-80 md:w-96 md:h-96 -right-20 top-10"></div>
+      <img src="foto dosen/1000218188-removebg-preview.png" class="relative w-90 md:w-100 rounded-lg shadow-lg" alt="Group">
+    </section>
+  </main>
+
+  <!-- Cards Section -->
+  <section id="cards-section" class="bg-[#1A2A6C] text-white py-12 px-6">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+      <div class="bg-white text-[#1A2A6C] rounded-lg shadow-lg p-6">
+        <h3 class="text-lg font-bold mb-2">Mengenal Program Studi</h3>
+        <p>
+          Program studi Pendidikan Teknologi Informasi dirancang untuk mempersiapkan para inovator pendidikan yang mampu mengintegrasikan teknologi dalam proses pembelajaran secara efektif dan efisien. Program ini tidak hanya menekankan pada penguasaan teknologi informasi, tetapi juga pada kemampuan merancang inovasi pembelajaran yang dapat meningkatkan kualitas pendidikan. Mahasiswa akan dibekali dengan pengetahuan mendalam mengenai perkembangan teknologi terkini serta bagaimana teknologi tersebut dapat dimanfaatkan untuk mencapai tujuan pembelajaran yang optimal. Selain itu, program ini juga mengembangkan keterampilan praktis dalam penggunaan berbagai perangkat lunak dan alat teknologi yang relevan, sehingga lulusan siap menghadapi tantangan dunia pendidikan modern yang semakin digital dan dinamis.
+        </p>
+      </div>
+
+      <div class="bg-white text-[#1A2A6C] rounded-lg shadow-lg p-6">
+        <h3 class="text-lg font-bold mb-2">Prospek Kerja</h3>
+        <p>
+          Lulusan dari program studi Pendidikan Teknologi Informasi memiliki peluang karir yang luas dan beragam di berbagai bidang. Mereka dapat berperan sebagai guru TIK yang mampu mengajarkan teknologi informasi secara efektif kepada peserta didik, serta menjadi profesional IT yang handal di berbagai sektor industri. Selain itu, lulusan juga dapat berkarir sebagai praktisi IT, konsultan teknologi, manajer proyek, programmer, analis sistem, atau insinyur jaringan. Dengan bekal pengetahuan teknologi dan keterampilan kewirausahaan, lulusan juga memiliki potensi untuk menjadi entrepreneur yang sukses di bidang teknologi pendidikan. Peluang karir yang terbuka luas ini menjadikan program studi ini sangat relevan dan strategis dalam menghadapi perkembangan dunia kerja yang semakin mengandalkan teknologi digital.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Galeri Section -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-10 py-10">
+    <h2 class="font-alfa text-[#1B2A6B] text-center text-3xl sm:text-4xl mb-6 tracking-wide">G A L E R I</h2>
+    <div class="overflow-x-auto scrollbar-hide">
+      <div class="flex space-x-6">
+        <!-- Card 1 -->
+        <div class="min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.12.26 (1).jpeg" alt="Kegiatan 1" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-[#1B2A6B] font-semibold text-sm mb-1">Kegiatan Praktikum</h3>
+            <p class="text-gray-500 text-xs">Mahasiswa sedang melakukan praktikum jaringan komputer.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.12.26 (2).jpeg" alt="Kegiatan 2" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-[#1B2A6B] font-semibold text-sm mb-1">Workshop AI</h3>
+            <p class="text-gray-500 text-xs">Kegiatan pelatihan Artificial Intelligence bersama dosen tamu.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="min-w-[250px] bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="foto kegiatan/WhatsApp Image 2025-07-09 at 13.12.26.jpeg" alt="Kegiatan 3" class="w-full h-40 object-cover">
+          <div class="p-4">
+            <h3 class="text-[#1B2A6B] font-semibold text-sm mb-1">Kuliah Umum</h3>
+            <p class="text-gray-500 text-xs">Sesi kuliah umum bersama pakar industri IT.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center mt-6">
+    <a href="halaman_galeri.html" class="inline-block bg-[#1B2A6B] text-white px-6 py-2 rounded hover:bg-[#0f1d59] transition text-sm font-semibold">
+      Lihat Galeri Selengkapnya
+    </a>
+  </div>
+
+  </section>
+
+  <!-- Pengumuman -->
+  <main class="max-w-7xl mx-auto px-6 sm:px-10 py-10">
+    <h1 class="font-alfa text-[#1B2B70] text-center text-3xl sm:text-4xl mb-10 tracking-widest">P E N G U M U M A N</h1>
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <article class="bg-[#1B2B70] rounded-lg p-6 shadow-lg swipe-card" ontouchstart="handleSwipe(event, this)">
+        <div class="flex items-center text-[#7B8DB0] text-xs mb-3">
+          <i class="far fa-calendar-alt mr-2"></i>
+          <time datetime="2025-03-03">March 3, 2025</time>
+        </div>
+        <h2 class="text-white font-extrabold text-base leading-snug mb-5 uppercase">JADWAL PERKULIAHAN SEMESTER GENAP TAHUN…</h2>
+        <a href="halaman pengumuman/halaman.pengumuman.jadwal.html">
+  <button class="bg-[#3B82F6] text-white text-sm rounded px-4 py-2 hover:bg-[#2563eb] transition">
+    Selengkapnya
+  </button>
+</a>
+
+      </article>
+
+      <!-- Card lainnya -->
+      <article class="bg-[#1B2B70] rounded-lg p-6 shadow-lg swipe-card" ontouchstart="handleSwipe(event, this)">
+        <div class="flex items-center text-[#7B8DB0] text-xs mb-3"><i class="far fa-calendar-alt mr-2"></i><time datetime="2025-03-01">March 1, 2025</time></div>
+        <h2 class="text-white font-extrabold text-base leading-snug mb-5">Kalender Kegiatan Akademik </h2>
+        <a href="halaman pengumuman/halaman.akademik.html">
+  <button class="bg-[#3B82F6] text-white text-sm rounded px-4 py-2 hover:bg-[#2563eb] transition">
+    Selengkapnya
+  </button>
+</a>
+
+      </article>
+
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-[#1A2A6C] text-white text-center py-4">
+    &copy; 2025 Pendidikan Teknologi Informasi. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      if (content.classList.contains('max-h-0')) {
+        content.classList.remove('max-h-0');
+        content.classList.add('max-h-96');
+      } else {
+        content.classList.remove('max-h-96');
+        content.classList.add('max-h-0');
+      }
+    }
+
+    function handleSwipe(event, element) {
+      let touch = event.changedTouches[0];
+      let startX = touch.clientX;
+      element.ontouchend = function(e) {
+        let endX = e.changedTouches[0].clientX;
+        if (endX - startX > 50) {
+          element.classList.add('swiped-right');
+          setTimeout(() => {
+            element.classList.remove('swiped-right');
+          }, 500);
+        }
+      };
+    }
+  </script>
+</body>
+</html>
