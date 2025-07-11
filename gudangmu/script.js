@@ -18,7 +18,7 @@ if (loginForm) {
     if (error) {
       document.getElementById('login-error').innerText = 'Login gagal: ' + error.message;
     } else {
-      window.location.href = 'dashboard.html';
+      window.location.href = '/dashboard';
     }
   });
 }
@@ -64,4 +64,6 @@ async function deleteFile(name) {
   if (error) alert("Gagal hapus!"); else loadFiles();
 }
 
-if (window.location.pathname.includes('dashboard.html')) loadFiles();
+if (window.location.pathname.includes('dashboard.html') || window.location.pathname.includes('/dashboard')) {
+  loadFiles();
+}
