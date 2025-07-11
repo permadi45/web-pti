@@ -36,22 +36,35 @@
 <body class="bg-white">
 
   <!-- Header -->
-  <header class="bg-[#1B2A6B] flex items-center justify-between px-6 py-4">
+  <!-- Header -->
+<header class="bg-[#1B2A6B] px-6 py-4">
+  <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
     <div class="flex items-center space-x-3">
       <img src="logo  pti/1000209760-removebg-preview.png" alt="Logo" class="h-10 w-auto">
-      <div class="hidden sm:block text-white font-extrabold text-xs leading-tight">
+      <div class="text-white font-extrabold text-xs leading-tight hidden sm:block">
         <div>PENDIDIKAN</div>
         <div>TEKNOLOGI</div>
         <div>INFORMASI</div>
       </div>
     </div>
-    <nav class="flex items-center space-x-8 text-white text-sm">
-      <a href="index.html" class="hover:underline">Beranda</a>
-      <a href="kontak.html" class="hover:underline">Profil</a>
-      <a href="profil.html" class="hover:underline">Kontak</a>
-      <a href="gudangmu/login.html" class="hover:underline">Kontak</a>
+
+    <!-- Responsive nav -->
+    <nav class="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 text-white text-sm">
+      <a href="index.html"
+         class="flex items-center gap-2 bg-[#F7941D] px-4 py-2 rounded-full font-semibold shadow-md transition duration-300 transform hover:scale-105 hover:-translate-y-1 hover:shadow-lg">
+        <i class="fas fa-home"></i> Beranda
+      </a>
+      <a href="kontak.html"
+         class="flex items-center gap-2 bg-[#3B82F6] px-4 py-2 rounded-full font-semibold shadow-md transition duration-300 transform hover:scale-105 hover:-translate-y-1 hover:shadow-lg">
+        <i class="fas fa-user"></i> Profil
+      </a>
+      <a href="profil.html"
+         class="flex items-center gap-2 bg-[#10B981] px-4 py-2 rounded-full font-semibold shadow-md transition duration-300 transform hover:scale-105 hover:-translate-y-1 hover:shadow-lg">
+        <i class="fas fa-envelope"></i> Kontak
+      </a>
     </nav>
-  </header>
+  </div>
+</header>
 
   <!-- Main Hero Section -->
   <main class="max-w-7xl mx-auto px-6 py-12 md:py-20 flex flex-col md:flex-row items-center">
@@ -67,23 +80,38 @@
   </main>
 
   <!-- Cards Section -->
-  <section id="cards-section" class="bg-[#1A2A6C] text-white py-12 px-6">
-    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
-      <div class="bg-white text-[#1A2A6C] rounded-lg shadow-lg p-6">
-        <h3 class="text-lg font-bold mb-2">Mengenal Program Studi</h3>
-        <p>
-          Program studi Pendidikan Teknologi Informasi dirancang untuk mempersiapkan para inovator pendidikan yang mampu mengintegrasikan teknologi dalam proses pembelajaran secara efektif dan efisien. Program ini tidak hanya menekankan pada penguasaan teknologi informasi, tetapi juga pada kemampuan merancang inovasi pembelajaran yang dapat meningkatkan kualitas pendidikan. Mahasiswa akan dibekali dengan pengetahuan mendalam mengenai perkembangan teknologi terkini serta bagaimana teknologi tersebut dapat dimanfaatkan untuk mencapai tujuan pembelajaran yang optimal. Selain itu, program ini juga mengembangkan keterampilan praktis dalam penggunaan berbagai perangkat lunak dan alat teknologi yang relevan, sehingga lulusan siap menghadapi tantangan dunia pendidikan modern yang semakin digital dan dinamis.
-        </p>
-      </div>
-
-      <div class="bg-white text-[#1A2A6C] rounded-lg shadow-lg p-6">
-        <h3 class="text-lg font-bold mb-2">Prospek Kerja</h3>
-        <p>
-          Lulusan dari program studi Pendidikan Teknologi Informasi memiliki peluang karir yang luas dan beragam di berbagai bidang. Mereka dapat berperan sebagai guru TIK yang mampu mengajarkan teknologi informasi secara efektif kepada peserta didik, serta menjadi profesional IT yang handal di berbagai sektor industri. Selain itu, lulusan juga dapat berkarir sebagai praktisi IT, konsultan teknologi, manajer proyek, programmer, analis sistem, atau insinyur jaringan. Dengan bekal pengetahuan teknologi dan keterampilan kewirausahaan, lulusan juga memiliki potensi untuk menjadi entrepreneur yang sukses di bidang teknologi pendidikan. Peluang karir yang terbuka luas ini menjadikan program studi ini sangat relevan dan strategis dalam menghadapi perkembangan dunia kerja yang semakin mengandalkan teknologi digital.
+<section id="cards-section" class="bg-[#1A2A6C] text-white py-16 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-10">
+    
+    <!-- Card: Mengenal Program Studi -->
+    <div class="bg-white text-[#1A2A6C] rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+      <img src="foto ilustrasi/Gemini_Generated_Image_4uuysz4uuysz4uuy (1).png" alt="Program Studi Icon" class="w-full md:w-40 h-40 object-contain p-4">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
+          <i class="fas fa-lightbulb text-[#F7941D]"></i> Mengenal Program Studi
+        </h3>
+        <p class="text-sm leading-relaxed">
+          Program studi Pendidikan Teknologi Informasi mempersiapkan generasi pendidik yang mampu mengintegrasikan teknologi dalam pembelajaran secara kreatif dan efektif. Mahasiswa tidak hanya mempelajari teknologi terkini, tetapi juga strategi pengajaran berbasis digital yang inovatif. Dilengkapi dengan keterampilan praktis, lulusan siap berkontribusi dalam dunia pendidikan digital yang dinamis.
         </p>
       </div>
     </div>
-  </section>
+
+    <!-- Card: Prospek Kerja -->
+    <div class="bg-white text-[#1A2A6C] rounded-xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+      <img src="foto ilustrasi/Gemini_Generated_Image_qvoyfvqvoyfvqvoy.png" alt="Karir Icon" class="w-full md:w-40 h-40 object-contain p-4">
+      <div class="p-6">
+        <h3 class="text-xl font-bold mb-3 flex items-center gap-2">
+          <i class="fas fa-briefcase text-[#F7941D]"></i> Prospek Karir
+        </h3>
+        <p class="text-sm leading-relaxed">
+          Lulusan memiliki peluang karir sebagai guru TIK, programmer, analis sistem, konsultan teknologi, hingga wirausahawan di bidang edutech. Dengan fondasi teknologi dan kemampuan manajerial, mereka siap menjawab tantangan industri digital dan pendidikan masa depan.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
   <!-- Galeri Section -->
   <section class="max-w-7xl mx-auto px-6 sm:px-10 py-10">
     <h2 class="font-alfa text-[#1B2A6B] text-center text-3xl sm:text-4xl mb-6 tracking-wide">G A L E R I</h2>
