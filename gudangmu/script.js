@@ -10,7 +10,11 @@ if (loginForm) {
     const email = document.getElementById('email').value;
     const password = document.getElementById('password').value;
 
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password
+    });
+
     if (error) {
       document.getElementById('login-error').innerText = 'Login gagal: ' + error.message;
     } else {
